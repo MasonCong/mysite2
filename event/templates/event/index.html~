@@ -1,0 +1,9 @@
+{% if picture_list %}
+    <ul>
+    {% for picture in picture_list %}
+        <li><a href="/event/{{ picture.id }}/">{{ picture.title_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No pictures are available.</p>
+{% endif %}
